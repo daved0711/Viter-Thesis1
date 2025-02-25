@@ -10,22 +10,19 @@ import { StoreProvider } from "./components/pages/Frontend/Store/storeContext";
 const App = () => {
   return (
     <StoreProvider>
- <Router>
-      <div className="flex">
-
-        <SideNav />
-        <div style={{ flex: 1, padding: "20px" }}>
-          <Routes>
-            <Route path="/" element={<Dashboard />} />
-            <Route path="/Analytics" element={<Analytics />} />
-            <Route path="/Animalbite" element={<Animalbite />} />
-          </Routes>
-       
+      <Router>
+        <div className="flex">
+          <SideNav />
+          <div style={{ flex: 1, padding: "20px" }}>
+            <Routes>
+              <Route path="/" element={<Dashboard />} />
+              <Route path="/Analytics" element={<Analytics />} />
+              <Route path="/Animalbite" element={<Animalbite />} />
+            </Routes>
+          </div>
         </div>
-      </div>
-    </Router>
+      </Router>
     </StoreProvider>
-   
   );
 };
 

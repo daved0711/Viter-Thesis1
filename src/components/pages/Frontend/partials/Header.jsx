@@ -1,4 +1,4 @@
-import { Moon, Settings, Sun } from 'lucide-react'
+import { ArrowLeftIcon, Moon, Settings, Sun } from 'lucide-react'
 import React from 'react'
 import { Link } from 'react-router-dom';
 
@@ -13,13 +13,13 @@ const Header = ({title="", subtitle=""}) => {
                             <h4>{title}</h4>
                             <p>{subtitle}</p>
                         </div>
-                        {/* <div className='flex items-center gap-6'>
+                        <div className='flex items-center gap-6'>
                           
-                            <Link to="/admin/settings"><Settings/></Link>
-                            <button className='size-[30px] rounded-full bg-accent grid place-content-center text-white'>
-                                RP
+                           
+                            <button className='size-[30px] rounded-full bg-dark grid place-content-center text-white'>
+                            <ArrowLeftIcon/>
                             </button>
-                        </div> */}
+                        </div>
                     </div>
                 </header>
     </>

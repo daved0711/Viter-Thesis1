@@ -21,11 +21,6 @@
   --body: 152, 152, 152;
 }
 
-
-
-
-
-
 @layer base {
   
   html {
@@ -93,7 +88,7 @@
     @apply pointer-events-none opacity-50
   }
   .btn-add, .btn-accent {
-    @apply bg-accent text-white hover:bg-opacity-80;
+    @apply bg-dark text-white hover:bg-opacity-80;
   }
   .btn-alert {
     @apply bg-alert text-white hover:bg-opacity-80;

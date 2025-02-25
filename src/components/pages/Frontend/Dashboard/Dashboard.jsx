@@ -12,6 +12,7 @@ import DashboardCharts from "./DashboardCharts";
 import DashboardMaps from "./DashboardMaps";
 import DashboardTable from "./DashboardTable";
 import Footer from "../Footer";
+import ModalAddDashboard from "./ModalAddDashboard";
 
 const Dashboard = () => {
   const { dispatch, store } = React.useContext(StoreContext);
@@ -57,7 +58,7 @@ const Dashboard = () => {
       {store.error && <ModalError />}
       {store.success && <ToastSuccess />}
       {/* {store.isView && <SpinnerWindow/>} */}
-      {/* {store.isAdd && <ModalAddAnimalbite/>} */}
+      {store.isAdd && <ModalAddDashboard/>}
     </>
   );
 };

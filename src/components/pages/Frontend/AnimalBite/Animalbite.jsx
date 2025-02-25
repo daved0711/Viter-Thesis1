@@ -12,8 +12,10 @@ import { setIsAdd } from '../Store/storeAction';
 import { StoreContext } from '../Store/storeContext';
 import AnimalBiteTable from './AnimalBiteTable';
 import ModalAddAnimalbite from './ModalAddAnimalbite';
-import Footer from '../Footer';
-import Header from '../Header';
+import Header from '../partials/Header';
+import Footer from '../partials/Footer';
+
+
 
 
 const Animalbite = () => {
